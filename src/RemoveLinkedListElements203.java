@@ -2,7 +2,13 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
-class isHappy {
+public class RemoveLinkedListElements203 {
+    public static void main(String[] args){
+        System.out.println();
+    }
+}
+
+class Solution1 {
     public boolean isHappy(int n) {
         int NewN = 0;
         List<Integer> list = new ArrayList<Integer>();
@@ -19,12 +25,5 @@ class isHappy {
             }
         }
         return false;
-    }
-}
-
-public class HappyNumber202 {
-    public static void main(String[] args) {
-        isHappy A = new isHappy();
-        System.out.println(A.isHappy(7));
     }
 }
