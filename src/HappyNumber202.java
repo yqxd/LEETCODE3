@@ -2,8 +2,14 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
-class isHappy {
-    public boolean isHappy(int n) {
+
+public class HappyNumber202 {
+    public static void main(String[] args) {
+        HappyNumber202 A = new HappyNumber202();
+        System.out.println(A.isHappy(7));
+    }
+
+    private boolean isHappy(int n) {
         int NewN = 0;
         List<Integer> list = new ArrayList<Integer>();
         while (!list.contains(n)) {
@@ -19,12 +25,5 @@ class isHappy {
             }
         }
         return false;
-    }
-}
-
-public class HappyNumber202 {
-    public static void main(String[] args) {
-        isHappy A = new isHappy();
-        System.out.println(A.isHappy(7));
     }
 }
