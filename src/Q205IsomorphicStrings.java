@@ -65,7 +65,7 @@ public class Q205IsomorphicStrings {
             return false;
         else if (lengthOfS == 0)
             return true;
-        HashMap<Character, Character> previousMatchingChar = new HashMap<Character, Character>();
+        HashMap<Character, Character> previousMatchingChar = new HashMap<>();
         for (int i = 0; i < lengthOfS; i++) {
             char sChar = s.charAt(i);
             char tChar = t.charAt(i);
