@@ -2,9 +2,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class CountPrimes204 {
+public class Q204CountPrimes {
     public static void main(String[] args){
-        CountPrimes204 A = new CountPrimes204();
+        Q204CountPrimes A = new Q204CountPrimes();
         System.out.println(A.countPrimes(10));
     }
     private int countPrimes(int n) {

@@ -17,9 +17,9 @@
 
 import java.util.*;
 
-public class ContainsDuplicate217 {
+public class Q217COntainsDuplicate {
     public static void main(String[] args) {
-        ContainsDuplicate217 A = new ContainsDuplicate217();
+        Q217COntainsDuplicate A = new Q217COntainsDuplicate();
         int[] B = {1,2,3,4,5,6};
         System.out.println(A.containsDuplicate(B));
     }

@@ -3,9 +3,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class HappyNumber202 {
+public class Q202HappyNumber202 {
     public static void main(String[] args) {
-        HappyNumber202 A = new HappyNumber202();
+        Q202HappyNumber202 A = new Q202HappyNumber202();
         System.out.println(A.isHappy(7));
     }
 
