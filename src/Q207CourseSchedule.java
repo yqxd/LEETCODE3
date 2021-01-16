@@ -31,7 +31,7 @@ import java.util.*;
 
 public class Q207CourseSchedule {
     public boolean canFinish(int numCourses, int[][] prerequisites) {
-        ArrayList<int[]> requisites = new ArrayList<int[]>(Arrays.asList(prerequisites));
+        ArrayList<int[]> requisites = new ArrayList<>(Arrays.asList(prerequisites));
         int[] courses = new int[numCourses];
         int depth_now = 0;
         int failure;
@@ -39,8 +39,8 @@ public class Q207CourseSchedule {
             failure = 1;
             ArrayList<Integer> DeleteCourses = new ArrayList<>();
             depth_now += 1;
-            for (int[] requiste : requisites) {
-                courses[requiste[0]] = depth_now;
+            for (int[] requisite : requisites) {
+                courses[requisite[0]] = depth_now;
             }
             for (int i = 0; i < courses.length; i++) {
                 if (courses[i] == depth_now - 1) {
@@ -62,7 +62,7 @@ public class Q207CourseSchedule {
 
     public static void main(String[] args) {
         Q207CourseSchedule A = new Q207CourseSchedule();
-        int S[][] = {{1, 0}, {1, 2}, {0, 1}};
+        int[][] S = {{1, 0}, {1, 2}, {0, 1}};
         System.out.println(A.canFinish(3, S));
     }
 }
