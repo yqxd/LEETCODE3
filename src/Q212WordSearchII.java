@@ -159,9 +159,7 @@ public class Q212WordSearchII {
     }
 
     class Solution {
-
         Trie trie = new Trie();
-
         public List<String> findWords(char[][] board, String[] words) {
             int index = 0;
             for (String word : words) {
@@ -170,7 +168,5 @@ public class Q212WordSearchII {
             trie.words = words;
             return trie.helper(board);
         }
-
-
     }
 }
