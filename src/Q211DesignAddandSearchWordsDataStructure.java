@@ -10,7 +10,7 @@ public class Q211DesignAddandSearchWordsDataStructure {
         /**
          * Initialize your data structure here.
          */
-        public WordDictionary() {
+        public WordDictionary() { 
         }
 
         public void addWord(String word) {
